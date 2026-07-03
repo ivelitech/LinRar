@@ -1,0 +1,5 @@
+# LinRAR has no hard dependencies beyond the Python standard library
+# and a working Tk installation (python3-tk on most distros).
+#
+# Optional, for drag-and-drop support:
+tkinterdnd2>=0.3.0
