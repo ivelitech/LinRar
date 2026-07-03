@@ -1,87 +1,96 @@
+<div align="center">
+
 # LinRAR
 
-A WinRAR-style archive manager for Linux. Open, create, browse, add to, and
-extract archives from a simple GUI — or from the command line.
+**The archive manager Linux deserves.**
 
-Written in pure Python 3 + Tkinter, so it runs on essentially any Linux
-distro with no extra dependencies for the core formats (zip, tar, tar.gz,
-tar.bz2, tar.xz). Optional support for `.rar` and `.7z` (read/extract only,
-since those are proprietary formats) if you have `unrar`/`unar` or
-`p7zip` installed.
+Open. Create. Extract. Done.
 
-## Install
+*Free & Open Source · Built for Linux · No installation required*
 
-```bash
-chmod +x install.sh
-./install.sh
-```
+</div>
 
-This installs LinRAR to `~/.local/share/linrar`, adds a `linrar` command to
-`~/.local/bin`, and registers it as an app so it shows up in your
-application menu and can be set as the default program for archive files
-(right-click an archive in your file manager → Open With → LinRAR).
+---
 
-## Usage
+## About
 
-```bash
-linrar                  # launch the GUI, then use Open/New Archive
-linrar myfile.zip        # open an archive directly
-```
+LinRAR is a free, open-source archive manager for Linux, built to feel
+instantly familiar to anyone who has ever used an archive tool before —
+a clean toolbar, a folder-style browser, and everything exactly where
+you expect it to be.
 
-The interface mirrors WinRAR: a menu bar (File / Commands / Tools / Favorites /
-Options / Help), an icon toolbar, a breadcrumb path bar with an Up button,
-and a Name / Size / Type / Modified file listing you can navigate into
-folders inside the archive just like a file manager.
+No package manager. No dependencies to chase down. No terminal.
+Unzip the folder, open the app, and get to work.
 
-Toolbar buttons:
-- **Add** — add files into the current folder of an open archive
-- **Extract To** — extract the whole archive to a folder you choose
-- **Test** — verify archive integrity (CRC check)
-- **View** — open the selected file with your system's default app
-- **Delete** — remove selected entries from a zip/tar archive
-- **Find** — search file names inside the archive
-- **Wizard** — guided create/open flow
-- **Info** — archive size, format, file/folder counts
-- **Repair** — best-effort recovery of a damaged .zip
+## Why LinRAR
 
-Double-click a folder row to browse into it; double-click a file to view it;
-use the Up arrow (or Backspace) to go back up.
+- **Just works** — download it, double-click it, you're in. That's the
+  whole setup process.
+- **Familiar by design** — a toolbar, a path bar, a file list. If you've
+  used an archive manager before, you already know how to use this one.
+- **Genuinely portable** — the whole app lives in one folder. Move it,
+  copy it to a USB drive, run it from anywhere. Nothing to install,
+  nothing left behind.
+- **Open source, honestly** — no telemetry, no accounts, no ads. The
+  code is yours to read, audit, and improve.
+
+## Features
+
+- Browse archives like folders, with full navigation in and out of directories
+- Create new archives or add files to existing ones
+- Extract an entire archive, or just the files you select
+- Verify archive integrity before you trust what's inside
+- Preview a file without fully extracting it
+- Find files by name across the whole archive
+- Recover what's salvageable from a damaged archive
+- View archive details — size, format, file and folder counts
 
 ## Supported formats
 
-| Format         | Create | Extract | Notes |
-|----------------|:------:|:-------:|-------|
-| `.zip`         | ✅ | ✅ | native |
-| `.tar`         | ✅ | ✅ | native |
-| `.tar.gz`/`.tgz`   | ✅ | ✅ | native |
-| `.tar.bz2`/`.tbz2` | ✅ | ✅ | native |
-| `.tar.xz`/`.txz`   | ✅ | ✅ | native |
-| `.rar`         | ❌ | ✅ | needs `unrar` or `unar` installed |
-| `.7z`          | ❌ | ✅ | needs `p7zip` installed |
+| Format | Open | Create |
+|---|---|---|
+| ZIP | ✅ | ✅ |
+| TAR | ✅ | ✅ |
+| TAR.GZ | ✅ | ✅ |
+| TAR.BZ2 | ✅ | ✅ |
+| TAR.XZ | ✅ | ✅ |
+| RAR | ✅ | — |
+| 7Z | ✅ | — |
 
-RAR and 7z creation isn't included because those are closed/patented
-formats without a free-software writer — this mirrors why most Linux
-archive tools (File Roller, Ark, etc.) are also extract-only for `.rar`.
+RAR and 7Z are proprietary formats without an open specification for
+writing archives, so LinRAR — like most open-source archive tools —
+supports opening them but not creating new ones.
 
-To add optional format support:
-```bash
-sudo apt install unrar p7zip-full     # Debian/Ubuntu
-sudo dnf install unrar p7zip          # Fedora
-sudo pacman -S unrar p7zip            # Arch
-```
+## Getting started
 
-## Uninstall
+Download LinRAR, unzip it, and open it. There's an icon right there in
+the folder — that's the app. Nothing to configure, nothing to accept,
+nothing to wait on.
 
-```bash
-rm -rf ~/.local/share/linrar
-rm ~/.local/bin/linrar
-rm ~/.local/share/applications/linrar.desktop
-```
+Want it in your applications menu instead of opening the folder each
+time? There's a one-click helper included for that too.
 
-## Running without installing
+## Philosophy
 
-You can also just run it directly, no install needed:
-```bash
-python3 linrar.py
-```
-(requires `python3-tk`, which is preinstalled on most desktop distros)
+Archive tools shouldn't get in your way. LinRAR aims to be the kind of
+software you forget is even a separate app — it opens fast, shows you
+what's inside, and lets you get back to what you were actually doing.
+
+## Open source
+
+LinRAR is released as free and open-source software. Contributions,
+bug reports, and forks are welcome — this project belongs to the
+community that uses it.
+
+## License
+
+Released under the MIT License. Use it, modify it, ship it — just
+keep the license notice attached.
+
+---
+
+<div align="center">
+
+**LinRAR** — made for Linux, by people who use Linux.
+
+</div>
