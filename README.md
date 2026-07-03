@@ -92,4 +92,8 @@ keep the license notice attached.
 
 **LinRAR** — made for Linux, by people who use Linux.
 
+
+https://github.com/user-attachments/assets/71aa05c6-34ee-430e-9fc4-1af0e1e8f44f
+
+
 </div>
