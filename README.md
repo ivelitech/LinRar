@@ -27,18 +27,6 @@ you expect it to be.
 No package manager. No dependencies to chase down. No terminal.
 Unzip the folder, open the app, and get to work.
 
-## Why LinRAR
-
-- **Just works** — download it, double-click it, you're in. That's the
-  whole setup process.
-- **Familiar by design** — a toolbar, a path bar, a file list. If you've
-  used an archive manager before, you already know how to use this one.
-- **Genuinely portable** — the whole app lives in one folder. Move it,
-  copy it to a USB drive, run it from anywhere. Nothing to install,
-  nothing left behind.
-- **Open source, honestly** — no telemetry, no accounts, no ads. The
-  code is yours to read, audit, and improve.
-
 ## Features
 
 - Browse archives like folders, with full navigation in and out of directories
