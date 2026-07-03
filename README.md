@@ -63,12 +63,6 @@ nothing to wait on.
 Want it in your applications menu instead of opening the folder each
 time? There's a one-click helper included for that too.
 
-## Philosophy
-
-Archive tools shouldn't get in your way. LinRAR aims to be the kind of
-software you forget is even a separate app — it opens fast, shows you
-what's inside, and lets you get back to what you were actually doing.
-
 ## License
 
 Released under the MIT License. Use it, modify it, ship it — just
