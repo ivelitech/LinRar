@@ -11,7 +11,7 @@
 
 Open. Create. Extract. Done.
 
-*Free · Built for Linux · No installation required*
+*Free Open Source · Built for Linux · No installation required*
 
 </div>
 
