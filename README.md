@@ -11,7 +11,7 @@
 
 Open. Create. Extract. Done.
 
-*Free & Open Source · Built for Linux · No installation required*
+*Free · Built for Linux · No installation required*
 
 </div>
 
@@ -80,12 +80,6 @@ time? There's a one-click helper included for that too.
 Archive tools shouldn't get in your way. LinRAR aims to be the kind of
 software you forget is even a separate app — it opens fast, shows you
 what's inside, and lets you get back to what you were actually doing.
-
-## Open source
-
-LinRAR is released as free and open-source software. Contributions,
-bug reports, and forks are welcome — this project belongs to the
-community that uses it.
 
 ## License
 
