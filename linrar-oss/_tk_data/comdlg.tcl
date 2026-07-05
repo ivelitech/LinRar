@@ -1,39 +1,4 @@
-# comdlg.tcl --
-#
-#	Some functions needed for the common dialog boxes. Probably need to go
-#	in a different file.
-#
-# Copyright (c) 1996 Sun Microsystems, Inc.
-#
-# See the file "license.terms" for information on usage and redistribution
-# of this file, and for a DISCLAIMER OF ALL WARRANTIES.
-#
 
-# tclParseConfigSpec --
-#
-#	Parses a list of "-option value" pairs. If all options and
-#	values are legal, the values are stored in
-#	$data($option). Otherwise an error message is returned. When
-#	an error happens, the data() array may have been partially
-#	modified, but all the modified members of the data(0 array are
-#	guaranteed to have valid values. This is different than
-#	Tk_ConfigureWidget() which does not modify the value of a
-#	widget record if any error occurs.
-#
-# Arguments:
-#
-# w = widget record to modify. Must be the pathname of a widget.
-#
-# specs = {
-#    {-commandlineswitch resourceName ResourceClass defaultValue verifier}
-#    {....}
-# }
-#
-# flags = a list of flags. Currently supported flags are:
-#     DONTSETDEFAULTS = skip default values setting
-#
-# argList = The list of  "-option value" pairs.
-#
 proc tclParseConfigSpec {w specs flags argList} {
     upvar #0 $w data
 
