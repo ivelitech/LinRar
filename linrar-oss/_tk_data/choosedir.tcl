@@ -1,11 +1,4 @@
-# choosedir.tcl --
-#
-#	Choose directory dialog implementation for Unix/Mac.
-#
-# Copyright (c) 1998-2000 by Scriptics Corporation.
-# All rights reserved.
 
-# Make sure the tk::dialog namespace, in which all dialogs should live, exists
 namespace eval ::tk::dialog {}
 namespace eval ::tk::dialog::file {}
 
@@ -14,13 +7,6 @@ namespace eval ::tk::dialog::file::chooseDir {
     namespace import -force ::tk::msgcat::*
 }
 
-# ::tk::dialog::file::chooseDir:: --
-#
-#	Implements the TK directory selection dialog.
-#
-# Arguments:
-#	args		Options parsed by the procedure.
-#
 proc ::tk::dialog::file::chooseDir:: {args} {
     variable ::tk::Priv
     set dataName __tk_choosedir
